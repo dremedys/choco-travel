@@ -1,0 +1,17 @@
+@import "choco-projects.css";
+@import "normalise.css";
+@import "reset.css";
+@import "vars.css";
+@import "header.css";
+@import "footer.css";
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main-layout {
+    background: var(--color-main-background);
+    color: #212c5b;
+    min-height: 100vh;
+}

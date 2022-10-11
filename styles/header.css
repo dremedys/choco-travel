@@ -1,0 +1,30 @@
+.header {
+    padding: 18px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: 16px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main-menu__item {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    border-bottom: 2px solid #9ea3b7;
+    padding-bottom: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.main-menu__item img {
+    width: 16px;
+}

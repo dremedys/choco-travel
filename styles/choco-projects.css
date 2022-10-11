@@ -1,0 +1,47 @@
+.choco-projects {
+    background: #FFF;
+    border-bottom: 3px solid #d4f2ff;
+    box-sizing: content-box;
+    color: #212c5b;
+}
+
+.choco-projects__content {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choco-projects__nav {
+    display: flex;
+}
+
+.choco-project__item {
+    padding: 10px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    border-right: 1px solid #ccc;
+    color: var(--color-primary-dark);
+}
+
+.choco-project__item:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.choco-project__item img {
+    width: 90%;
+    height: auto;
+}
+
+.choco-projects__login {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: #387fbf;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+}
