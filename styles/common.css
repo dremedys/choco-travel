@@ -2,9 +2,10 @@
 @import "normalise.css";
 @import "reset.css";
 @import "vars.css";
+@import "login.css";
+@import "rentalcars.css";
 @import "header.css";
 @import "footer.css";
-
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -14,4 +15,9 @@
     background: var(--color-main-background);
     color: #212c5b;
     min-height: 100vh;
+}
+
+@font-face {
+    font-family: Sirius;
+    src: url('../public/fonts/Sirius-Book.otf');
 }

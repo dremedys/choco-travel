@@ -1,0 +1,91 @@
+.main-layout_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: none !important;
+}
+
+.login {
+    box-sizing: border-box;
+    font-family: Sirius;
+    max-width: 377px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    box-shadow: 0px 92px 92px rgb(0 0 0 / 5%), 0px 3px 38.4354px rgb(0 0 0 / 3%), 0px -3px 20.5494px rgb(0 0 0 / 6%), 0px 5.79369px 11.5198px rgb(0 0 0 / 2%), 0px 2.40368px 6.11809px rgb(0 0 0 / 1%), 0px 0.705169px 2.54588px rgb(0 0 0 / 1%);
+}
+
+.main-card__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.main-card__bottom-btn {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-card__bottom-btn input,
+button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 12px 40px 11px;
+    background-color: #000;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin: 4px 0;
+    cursor: pointer;
+    height: 52px;
+    border-radius: 12px;
+    font-weight: bold;
+    touch-action: none;
+}
+
+.input-phone_number {
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    line-height: 16px;
+    color: #000;
+    outline: none;
+    padding: 12px 46px 11px 16px;
+    z-index: 2;
+    height: 52px;
+    background: #f1f2f7;
+    font-size: 16px;
+    border: 1px solid #f1f2f7
+}
+
+a button {
+    width: 100%;
+    background: #f1f2f7;
+    color: #000;
+}
+
+.login_form .forgot_password {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
