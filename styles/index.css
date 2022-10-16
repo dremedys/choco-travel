@@ -4,3 +4,441 @@
     font-weight: 600;
     text-align: center;
 }
+
+.search {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.search__input {
+    position: relative;
+    float: left;
+}
+
+.search__input .example {
+    position: absolute;
+    top: 60px;
+    left: 2px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.example span {
+    border-bottom: 1px dashed #9ea3b7;
+    border-bottom: dashed 1px var(--color-gray);
+}
+
+.search__input input {
+    width: 174px;
+    height: 55px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(0, 13, 67, .87);
+    font-size: 15px;
+    float: left;
+    padding: 0 20px 0 13px;
+    border: 1px solid var(--color-gray);
+}
+
+.search__swap {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    float: left;
+    background: #fff;
+    border: unset;
+    border-top: 1px solid #9ea3b7;
+    border-top: 1px solid var(--color-gray);
+    border-bottom: 1px solid #9ea3b7;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.search__swap div {
+    background: url('https://www.chocotravel.com/media/v3/media/images/icon-change-dests_03.png') 50% no-repeat;
+    width: 30px;
+    height: 47px;
+    margin: 3px 0;
+    border-left: 1px solid #9ea3b7;
+    border-left: 1px solid var(--color-gray);
+    border-right: 1px solid #9ea3b7;
+    border-right: 1px solid var(--color-gray);
+    cursor: pointer;
+}
+
+.search__date {
+    font-size: 15px;
+    color: #a8d9ef;
+    background: #fff;
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid var(--color-gray);
+    border-bottom: 1px solid var(--color-gray);
+    width: 183px;
+    position: relative;
+
+}
+
+.search__date input {
+    border: none;
+}
+
+.search__date:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.search-form__date_choose {
+    font-size: 15px;
+    background: #fff;
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #9ea3b7;
+    border-top: 1px solid var(--color-gray);
+    border-bottom: 1px solid #9ea3b7;
+    border-bottom: 1px solid var(--color-gray);
+    width: 183px;
+}
+
+.search-form__date_choose .date-icon {
+    background: url('https://www.chocotravel.com/media/v3/media/images/date-picker-icon_03.png') top;
+    width: 19px;
+    height: 46px;
+    float: right;
+    margin: 17px 9px 0 0;
+}
+
+.search-form__date_choose__event.no-datepick {
+    position: relative;
+}
+
+.search-form__date_choose .left-line {
+    width: 1px;
+    float: left;
+    height: 50px;
+    background: #9ea3b7;
+    background: var(--color-gray);
+    margin-top: 3px;
+    margin-right: 13px;
+}
+
+.search-form__date_choose__event.no-datepick:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+input[type="date"] {
+    color: rgba(0, 13, 67, .54);
+    background: transparent;
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.search-form__passengers {
+    font-size: 13px;
+    min-height: 55px;
+    border-top: 1px solid #9ea3b7;
+    border-top: 1px solid var(--color-gray);
+    border-bottom: 1px solid #9ea3b7;
+    border-bottom: 1px solid var(--color-gray);
+    float: left;
+    width: 232px;
+    /*background: url('https://www.chocotravel.com/media/v3/media/images/icon-choose-psngrs_03_03.png') no-repeat #fff;*/
+    /*background-position: 202px -20px;*/
+    position: relative;
+    color: rgba(0, 13, 67, .54);
+}
+
+.search-form__passenger:active {
+    border: none
+}
+
+.search-form__passengers .psngrs_number {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-form__passengers .left-line {
+    width: 1px;
+    float: left;
+    height: 50px;
+    background: #9ea3b7;
+    background: var(--color-gray);
+    margin-top: 3px;
+    margin-right: 13px;
+}
+
+.search-form__passengers .psngrs_type {
+    padding: 7px 0 0;
+    cursor: pointer;
+}
+
+.search__submit {
+    float: left;
+    box-sizing: border-box;
+    width: 136px;
+    height: 57px;
+    padding: 5px 0;
+    line-height: 47px;
+    font-size: 21px;
+    text-align: center;
+    background: #fe9922;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.search__submit a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.advantages {
+    margin-bottom: 36px;
+}
+
+.adv__title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adv__subtitle {
+    margin-bottom: 32px;
+    text-align: center;
+    color: var(--color-gray)
+}
+
+.adv-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    grid-auto-rows: 1fr;
+    column-gap: 20px;
+}
+
+.adv-item {
+    padding: 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--elevation-1);
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.adv-item img {
+    margin-bottom: 14px;
+}
+
+.adv-item__title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.adv-item__subtitle {
+    color: #9EA3A5;
+    text-align: center;
+}
+
+
+.subscript {
+    padding: 20px 30px;
+    margin-bottom: 32px;
+    background: white;
+    display: flex;
+    align-items: center;
+    /*https://www.chocotravel.com/media/v3/media/images/subscribe-icon.svg*/
+}
+
+.subscript img {
+    margin-right: 54px;
+}
+
+.subscript form {
+    width: 55%;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    margin-left: 10px;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.subscript button {
+    border: none;
+    padding: 0 10px;
+    width: 136px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    outline: 0;
+    background: #ff8a00;
+    position: relative;
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 14px;
+    border-radius: var(--radius-xs);
+}
+
+.subscript input {
+    border-radius: var(--radius-xs);
+    font-size: 14px;
+    background: #fff;
+    padding: 0 10px;
+    height: 40px;
+    color: var(--color-dark-text);
+    width: 240px;
+    border: 1px solid var(--color-light-gray);
+    margin-right: 5px;
+}
+
+.about-us {
+    border-top: 2px solid #9ea3b7;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #3b3e4d;
+    padding-bottom: 32px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.about-us p, .about-us b {
+    margin-bottom: 7px;
+    display: block;
+}
+
+.about-us b {
+    font-weight: 600;
+}
+
+
+.media {
+    padding-bottom: 32px;
+}
+
+.media__header {
+    border-bottom: 2px solid #9ea3b7;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.media__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media-item {
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 90px;
+    background: url('https://www.chocotravel.com/media/v3/media/images/articles-bg.png') no-repeat;
+    cursor: pointer;
+}
+
+.media-item img {
+    width: 65px;
+    margin-top: 10px;
+}
+
+.media-item:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 150px;
+    background-color: #9ea3b7;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    background: #6290c1;
+    padding: 0 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.app__left {
+    width: 40%;
+    height: auto;
+}
+
+.app__left img {
+    width: 100%;
+}
+
+.app__right {
+    width: 55%;
+}
+
+.app__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 32px;
+    text-transform: uppercase;
+}
+
+.app_desc {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 22px;
+}
+
+.app_get-link {
+    font-size: 14px;
+    color: #94dcfd;
+    margin: 0 0 15px;
+}
+
+.app__input {
+    background: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.app_list {
+    display: flex;
+    align-items: center;
+}
+
+.app-item img {
+    height: 45px;
+}

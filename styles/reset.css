@@ -19,6 +19,11 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+* {
+    box-sizing: border-box;
+
+}
+
 ol, ul {
     list-style: none;
 }
@@ -40,4 +45,9 @@ table {
 
 html {
     font-family: Open Sans, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
