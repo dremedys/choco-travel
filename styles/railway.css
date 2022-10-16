@@ -1,0 +1,34 @@
+.features {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+}
+
+.feature li .text {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.features li img {
+    width: 239px;
+    height: auto;
+}
+
+.features li mark {
+    padding: 0 10px;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    background-color: #aae5ff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__content img {
+    width: 6rem;
+    height: auto;
+}
+
+.card__content .kind {
+    font-size: 0.75rem;
+}
+
+.card__content .time {
+    font-size: 14px;
+}
+
+.card__content button {
+    --bg-opacity: 1;
+    background-color: #ff8a00;
+    background-color: rgba(255, 138, 0, var(--bg-opacity));
+    --border-opacity: 1;
+    border-color: #ff8a00;
+    border: 1px solid rgba(255, 138, 0, var(--border-opacity));
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: .875rem;
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    border-radius: 10px;
+    padding: 10px;
+}

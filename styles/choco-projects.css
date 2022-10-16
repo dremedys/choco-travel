@@ -26,6 +26,7 @@
     row-gap: 8px;
     border-right: 1px solid #ccc;
     color: var(--color-primary-dark);
+    cursor: pointer;
 }
 
 .choco-project__item:first-child {
@@ -44,4 +45,5 @@
     color: white;
     font-size: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
