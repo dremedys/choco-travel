@@ -1,0 +1,358 @@
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tours-request {
+    display: flex;
+    gap: 50px;
+    max-height: 530px;
+}
+
+.tours-request_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leave-request-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.leave-request-header p {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.leave-request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 48px 40px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.leave-request-form .submit-req {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #ff8a00;
+}
+
+.leave-request-form input {
+    padding: 1rem;
+    background-color: #D1D5DB;
+    color: #000000;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    width: 92%;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+.available-country {
+    font-weight: bold;
+}
+
+.available-country .countries {
+    font-weight: normal;
+}
+
+.what-we-offer {
+    padding: 0 150px;
+    margin-bottom: 6rem;
+    background-color: #3B82F6;
+    color: #ffffff;
+    background-image: url("https://www.chocotravel.com/media/v3/media/images/tours/background_pattern.png");
+}
+
+.what-we-offer-header {
+    text-align: center;
+    margin: 0 auto 2rem;
+    padding: 50px 0;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.what-we-offer_block {
+    padding: 0 0 60px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.what-we-offer_block img {
+    max-width: 56px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.offer_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-color: #ffffff;
+    border-opacity: 0.5;
+    border-style: solid;
+}
+
+.offer_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-color: #ffffff;
+    border-opacity: 0.5;
+    border-style: solid;
+}
+
+.warranty {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.discount-low-price {
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 6rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 1rem;
+    background-image: url("https://www.chocotravel.com/media/v3/media/images/tours/background_gradient.png");
+}
+
+.low-price {
+    max-width: 650px;
+    text-align: center;
+}
+
+.low-price h2 {
+    font-size: 36px;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.low-price p {
+    margin-top: 25px;
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+.interesting-tours {
+    padding: 50px 0 150px;
+}
+
+.slider {
+    display: inline-flex;
+    margin-bottom: 1.25rem;
+    margin-left: 1.5rem;
+}
+
+.tours-header h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.tours-header {
+    text-align: center;
+    gap: 25px;
+}
+
+.tours-header p {
+    margin: 0 auto;
+    color: #6B7280;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    width: 50%;
+}
+
+.tour-element {
+    max-width: 300px;
+    max-height: 486px;
+    display: flex;
+    gap: 50px;
+    color: #000000;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #D1D5DB;
+    border-style: solid;
+}
+
+.tour-description img {
+    width: 100%;
+}
+
+.tour-description h2 {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.tour-city {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.star-rating {
+    display: flex;
+    border-color: #ff8a00;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.25rem;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.star-rating img {
+    max-width: 15px;
+}
+
+.tour-prices {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.tour-prices .details {
+    display: block;
+    font-size: 14px;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.tour-prices .leave-req {
+    padding: 0.75rem;
+    font-weight: 700;
+    width: 100%;
+    color: #387fbf;
+    background-color: #fff;
+    border-color: #387fbf;
+}
+
+.tour-prices .leave-req:hover {
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    --bg-opacity: 1;
+    background-color: #387fbf;
+    background-color: rgba(56, 127, 191, var(--bg-opacity));
+}
+
+.tour-prices .price-range {
+    font-size: 30px;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.we-call-you_block {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.we-call-you_block h2 {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    color: #000000;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    text-align: center;
+    font-weight: normal;
+}
+
+.we-call-you_block .book-hotel-advance {
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: #387fbf;
+    margin-top: -100px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.book-hotel-advance p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.book-hotel-advance a {
+    display: flex;
+    padding-top: 1rem;
+    border-radius: 30px;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.call-back {
+    display: flex;
+}
+
+.call-back img {
+    max-height: 570px;
+}
+
+.call-back form {
+    max-height: 260px;
+}
