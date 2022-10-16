@@ -2,9 +2,6 @@
 @import "normalise.css";
 @import "reset.css";
 @import "vars.css";
-@import "login.css";
-@import "rentalcars.css";
-@import "tours.css";
 @import "header.css";
 @import "footer.css";
 .container {
