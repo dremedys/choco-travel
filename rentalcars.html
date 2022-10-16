@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="styles/common.css" rel="stylesheet"/>
+    <link href="styles/rentalcars.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="main-layout">
+    <div class="rental-cars">
+        <div class="rental-cars__block rental-cars__block_top" id="forms">
+            <div class="rental-cars__block__content">
+                <div class="rental-cars__block">
+                    <div class="rental-cars__block form_cars">
+                        <div class="rental-cars__forms" >
+                            <div class="rental-cars__forms__tabs">
+                                <div id="start-booking" class="rental-cars__forms__tabs__tab rental-cars__forms__tabs__tab_active" onclick="pickTab(1)">
+                                    Предварительный расчет и бронирование
+                                </div>
+                                <div id="cancel-booking" class="rental-cars__forms__tabs__tab" onclick="pickTab(2)">
+                                    Изменить или отменить бронирование
+                                </div>
+                            </div>
+                            
+                            <div class="rental-cars__forms__content">
+                                <iframe id="first-form" tab="1" class="rental-cars__forms__content__tab rental-cars__forms__content__tab_active" src="https://eixnbeweb01.rent-at-avis.com/avisonline/ru/IBE.nsf/ReservationStep1?OpenForm&MST=38CB55A0B8DEA242C12582BA005A5379" width="100%" height="600" align="middle" frameborder="0">
+                                    Ваш браузер не поддерживает плавающие фреймы!
+                                </iframe>
+                                <iframe id="second-form" tab="2" class="rental-cars__forms__content__tab" src="https://eixnbeweb01.rent-at-avis.com/avisonline/ru/IBE.nsf/modifycancel?OpenForm&MST=38CB55A0B8DEA242C12582BA005A5379" width="100%" height="600" align="middle" frameborder="0">
+                                    Ваш браузер не поддерживает плавающие фреймы!
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rental-cars__block">
+                        <div class="rental-cars__item">
+                            <div class="rental-cars__header" style="color: white; text-align: right">
+                                <img src="https://www.chocotravel.com/media/images/avis/chocotravel-logo.svg"><br>
+                                Аренда автомобилей по всему миру онлайн
+                            </div>
+                            <img src="https://www.chocotravel.com/media/images/avis/car.png" class="block rental-cars__block_top__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rental-cars__block__content">
+            <h1>
+                Попробуйте свободу на вкус, арендуя автомобиль в Avis
+            </h1>
+            <div class="rental-cars_pros">
+                <div class="cars-feature">
+                    <img src="https://www.chocotravel.com/media/images/avis/features_1.svg"/>
+                    <div class="feature_desc">
+                        <h3 class="freedom_paragraph">Свобода передвижения.</h3>
+                        <p>
+                            Вы составляете собственный маршрут, не обращая внимание на расписание общественного транспорта.
+                        </p>
+                    </div>
+                </div>
+                <div class="cars-feature">
+                    <img src="https://www.chocotravel.com/media/images/avis/features_2.svg"/>
+                    <div class="feature_desc">
+                        <h3 class="freedom_paragraph">Свобода выбора.</h3>
+                        <ul>
+                            <p>Вы можете выбрать:</p>
+                            <ol>
+                                · автомобиль, который больше всего подходит под все Ваши требования;</ol>
+                            <ol>· станцию проката наиболее удобную для Вас;</ol>
+                            <ol>· дополнительные услуги и страховки, которые сделают Ваше путешествие еще более комфортным;</ol>
+                            <ol>
+                                · самое оптимальное для Вас время получения и возврата авто</ol>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cars-feature">
+                    <img src="https://www.chocotravel.com/media/images/avis/features_3.svg"/>
+                    <div class="feature_desc">
+                        <h3 class="freedom_paragraph">Свобода руки.</h3>
+                        <p>
+                            Ведь все вещи Вы можете положить в багажник авто и забыть о тяжестях и усталости.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #687482; color: white">
+            <div class="rental-cars__block rental-cars__block_comfort" style="width: calc(50vw + 500px); justify-content: space-between;">
+                <img src="https://www.chocotravel.com/media/images/avis/comfort.png" style="margin-right: 70px; object-fit: cover; object-position: 100% 0">
+                <div style="padding: 52px 0; max-width: 1000px;">
+                    <div class="rental-cars__header_2">
+                        Путешествуйте с комфортом
+                    </div>
+                    <p>
+                        Автомат или механика, небольшой автомобиль или микроавтобус, Вы сможете подобрать автомобиль под любые цели.
+                    </p>
+                    <p>
+                        А для того, чтобы сделать Ваше путешествие еще более комфортным и безопасным мы предлагаем ряд дополнительных опций, таких как навигатор и детское кресло. 
+                    </p>
+                    <p>
+                        Вы можете заказать эти опции заранее при бронировании или во время получения авто на станции проката, при условии их наличия.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="rental-cars__block__content">
+            <div class="rental-cars__block rental-cars__block_extra">
+                <div>
+                    <div class="rental-cars__header" style="text-align:left">
+                        Дополнительные услуги
+                    </div>
+                    <p>
+                        Также мы предлагаем дополнительные услуги, такие как расширенное страхование и доставка автомобиля к отелю. В стоимость аренды в большинстве стран аренды уже будет включена стандартная страховка от ущерба и угона с франшизой. 
+                    </p>
+                    <p>
+                        Франшиза (максимальная финансовая ответственность водителя при наступлении страхового случая) может отличаться в зависимости от страны и выбранной группы авто. Если Вы хотите воспользоваться полным страхованием или приобрести дополнительные страховки, просим Вас сообщать об этом нашим сотрудникам на станции проката.
+                    </p>
+                    <p>
+                        После бронирования просим Вас ознакомиться с информацией по Вашей аренде в подтверждении бронирования, все ли верно там указано.
+                    </p>
+                </div>
+                <div class="car-girl_image">
+                    <img src="https://www.chocotravel.com/media/images/avis/extra.png">
+                </div>
+            </div>
+        </div>
+        <div style="background: #687482; color: white">
+            <div class="rental-cars__block__content">
+                <div class="rental-cars__header" style="color: white; margin-bottom: 64px">
+                    Обращаем ваше внимание
+                    <div style="font-size: 20px">
+                        Документы, которые водителю необходимо иметь при себе на станции проката:
+                    </div>
+                </div>
+                <div class="rental-cars__block" style="flex-wrap: wrap; justify-content: center">
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/passport.svg">
+                        Действующий заграничный паспорт
+                    </div>
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/credit-card.svg">
+                        Кредитную карту на имя водителя
+                    </div>
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/calendar.svg">
+                        Подтверждение бронирования
+                    </div>
+                    
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/driver-license.svg">
+                        Действующие национальное и международное водительские удостоверения
+                    </div>
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/contract.svg">
+                        Ваучер<br>
+                        <small>(если оплата была произведена в Казахстане)</small>
+                    </div>
+                    <div class="rental-cars__doc">
+                        <img src="https://www.chocotravel.com/media/images/avis/internet.svg">
+                        Подтверждение скидки<br>
+                        <small>(если Вы воспользовались скидочным кодом, предъявите купон при получении авто)</small>
+                    </div>
+                </div>
+                <button class="rental-cars__button" onclick="toTop()">
+                    Забронировать авто
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/index.js"></script>
+<script src="./js/main-layout.js"></script>
+</body>
+</html>
