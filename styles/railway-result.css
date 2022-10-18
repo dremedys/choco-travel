@@ -1,0 +1,84 @@
+.results {
+
+}
+
+.row__header {
+    display: grid;
+    grid-template-columns: 12% 14% 14% 14% 14% 14% 18%;
+    padding: 10px;
+    background: #cfd1db;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 26% 14% 14% 14% 14% 9% 9%;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(207, 209, 219, .5);
+    box-shadow: 0 3px 6px rgb(56 56 56 / 15%);
+    background: white;
+}
+
+.name-and-nav {
+    display: flex;
+    flex-direction: column;
+    column-gap: 6px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.nav {
+    color: #383838;
+    font-weight: 700;
+}
+
+.nav__arrow {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    margin: 0 2px;
+    background-image: url("https://www.chocotravel.com/media/v3/media/images/rw/search/direction-arrow-black.svg");
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    column-gap: 6px;
+}
+
+.date__hours {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date__day {
+    font-size: 12px;
+}
+
+.duration {
+    font-size: 12px;
+}
+
+.train-kind {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+button {
+    padding: 2px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    background: #ff8a00;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}

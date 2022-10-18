@@ -13,3 +13,9 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+package.json
+.firebase/*
+firebase.json
+.firebaserc
+404.html

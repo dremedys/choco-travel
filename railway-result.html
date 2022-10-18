@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+    <link href="styles/common.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet"/>
+    <link href="styles/railway-result.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="main-layout">
+    <div class="container">
+        <h1 class="title">Купить ЖД билеты по Казахстану онлайн
+        </h1>
+        <div class="search">
+            <div class="search__input">
+                <input placeholder="Откуда" style="border-right:none;" type="text"/>
+                <p class="example">
+                    <span>Алматы</span>
+                    <span>Африка</span>
+                </p>
+            </div>
+            <button class="search__swap">
+                <div></div>
+            </button>
+            <div class="search__input">
+                <input placeholder="Куда" style="border-left: none; border-right: none" type="text"/>
+                <p class="example">
+                    <span>Алматы</span>
+                    <span>Африка</span>
+                </p>
+            </div>
+            <div class="search-form__date_choose">
+                <div class="search-form__date_choose__event"></div>
+                <div class="left-line"></div>
+                <input class="event__input-no" placeholder="Дата" type="date">
+                <!--                <div class="event__input-no">Дата</div>-->
+                <div class="clear"></div>
+            </div>
+            <select class="search-form__passengers">
+                <div class="left-line"></div>
+                <div class="psngrs_type">Место</div>
+                <option value="efwwf">Купе</option>
+                <option value="efwwf">Плацкарт</option>
+            </select>
+            <button class="search__submit">
+                <a href="./railway-result.html">Искать</a>
+            </button>
+        </div>
+        <div class="results">
+            <div class="row__header">
+                <span>Поезд</span>
+                <span>Маршрут</span>
+                <span>Отправление</span>
+                <span>Время в пути</span>
+                <span>Прибытие</span>
+                <span>Вагоны</span>
+                <span>Цена билета</span>
+            </div>
+            <div class="row">
+                    <span class="name-and-nav">
+                        <span class="name">
+                            <img alt=""
+                                 src="https://www.chocotravel.com/media/v3/media/images/rw/search/blue-map-marker.svg">
+                            Тальго
+                        </span>
+                        <span class="nav">Мангистау <span class="nav__arrow"></span> Алматы</span>
+                    </span>
+                <div class="date">
+                    <span class="date__hours">16:00</span>
+                    <span class="date__day">17 октября</span>
+                </div>
+                <div class="duration">
+                    <span>1 д. 18 ч. 12 м.</span>
+                </div>
+                <div class="date">
+                    <span class="date__hours">19:00</span>
+                    <span class="date__day">19 октября</span>
+                </div>
+                <div class="train-kind">
+                    Купе 150
+                </div>
+                <div class="price">
+                    25 000 KZT
+                </div>
+                <button>Купить</button>
+            </div>
+            <div class="row">
+                    <span class="name-and-nav">
+                        <span class="name">
+                            <img alt=""
+                                 src="https://www.chocotravel.com/media/v3/media/images/rw/search/blue-map-marker.svg">
+                            Тальго
+                        </span>
+                        <span class="nav">Шымкент <span class="nav__arrow"></span> Тараз</span>
+                    </span>
+                <div class="date">
+                    <span class="date__hours">16:00</span>
+                    <span class="date__day">17 октября</span>
+                </div>
+                <div class="duration">
+                    <span>4 д. 18 ч. 12 м.</span>
+                </div>
+                <div class="date">
+                    <span class="date__hours">19:00</span>
+                    <span class="date__day">19 октября</span>
+                </div>
+                <div class="train-kind">
+                    Плацкарт 34
+                </div>
+                <div class="price">
+                    12 340 KZT
+                </div>
+                <button>Купить</button>
+            </div>
+            <div class="row">
+                    <span class="name-and-nav">
+                        <span class="name">
+                            <img alt=""
+                                 src="https://www.chocotravel.com/media/v3/media/images/rw/search/blue-map-marker.svg">
+                            Тальго
+                        </span>
+                        <span class="nav">Шымкент <span class="nav__arrow"></span> Тараз</span>
+                    </span>
+                <div class="date">
+                    <span class="date__hours">16:00</span>
+                    <span class="date__day">17 октября</span>
+                </div>
+                <div class="duration">
+                    <span>4 д. 18 ч. 12 м.</span>
+                </div>
+                <div class="date">
+                    <span class="date__hours">19:00</span>
+                    <span class="date__day">19 октября</span>
+                </div>
+                <div class="train-kind">
+                    Плацкарт 34
+                </div>
+                <div class="price">
+                    12 340 KZT
+                </div>
+                <button>Купить</button>
+            </div>
+            <div class="row">
+                    <span class="name-and-nav">
+                        <span class="name">
+                            <img alt=""
+                                 src="https://www.chocotravel.com/media/v3/media/images/rw/search/blue-map-marker.svg">
+                            Тальго
+                        </span>
+                        <span class="nav">Актау<span class="nav__arrow"></span> Кызылорда</span>
+                    </span>
+                <div class="date">
+                    <span class="date__hours">7:00</span>
+                    <span class="date__day">7 ноября</span>
+                </div>
+                <div class="duration">
+                    <span>18 ч. 12 м.</span>
+                </div>
+                <div class="date">
+                    <span class="date__hours">6:00</span>
+                    <span class="date__day">8 ноября</span>
+                </div>
+                <div class="train-kind">
+                    Купе 34
+                </div>
+                <div class="price">
+                    10 340 KZT
+                </div>
+                <button>Купить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/main-layout.js"></script>
+</body>
+</html>

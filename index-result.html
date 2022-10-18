@@ -12,6 +12,44 @@
 <body>
 <div class="main-layout">
     <div class="container">
+        <div class="search">
+            <div class="search__input">
+                <input placeholder="Откуда" style="border-right:none;" type="text"/>
+                <p class="example">
+                    <span>Алматы</span>
+                    <span>Африка</span>
+                </p>
+            </div>
+            <button class="search__swap">
+                <div></div>
+            </button>
+            <div class="search__input">
+                <input placeholder="Куда" style="border-left: none; border-right: none" type="text"/>
+                <p class="example">
+                    <span>Алматы</span>
+                    <span>Африка</span>
+                </p>
+            </div>
+            <div class="search-form__date_choose">
+                <div class="search-form__date_choose__event"></div>
+                <div class="left-line"></div>
+                <input class="event__input-no" placeholder="Дата" type="date">
+                <!--                <div class="event__input-no">Дата</div>-->
+                <div class="clear"></div>
+            </div>
+            <select class="search-form__passengers">
+                <div class="left-line"></div>
+                <div class="psngrs_type">Класс</div>
+                <div class="psngrs_number">Эконом</div>
+                <option value="efwwf">Эконом</option>
+                <option value="efwwf">Бизнес</option>
+                <option value="efwwf">Комфорт+</option>
+
+            </select>
+            <button class="search__submit">
+                <a href="./index-result.html">Искать</a>
+            </button>
+        </div>
         <div class="card">
             <div class="card__content">
                 <img src="https://www.chocotravel.com/media/images/logo/medium_logo/DV.png">

@@ -4,3 +4,31 @@
     border-top: 4px solid #fe9922;
     padding: 20px 0px;
 }
+
+.footer__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.footer__nav {
+
+}
+
+.footer__nav a {
+    display: block;
+}
+
+.nav__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.nav__item {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
