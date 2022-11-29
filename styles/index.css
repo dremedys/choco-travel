@@ -43,6 +43,20 @@
     border: 1px solid var(--color-gray);
 }
 
+.select-city {
+    width: 174px;
+    height: 55px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(0, 13, 67, .87);
+    font-size: 15px;
+    float: left;
+    padding: 0 20px 0 13px;
+    border: 1px solid var(--color-gray);
+}
+
 .search__swap {
     position: relative;
     padding: 0;

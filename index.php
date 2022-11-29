@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    require_once "db.php";
+    $cities = mysqli_query($conn, "select * from cities");
+    // if(isset($_POST['from'])){
+    //     $cities = mysqli_query($conn, "select * from cities where id != " . $_POST['1']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +12,61 @@
     <title>Title</title>
     <link href="styles/common.css" rel="stylesheet"/>
     <link href="styles/index.css" rel="stylesheet"/>
+    <style>
+        .select-city {
+            width: 174px;
+            height: 55px;
+            line-height: 20px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgba(0, 13, 67, .87);
+            font-size: 15px;
+            float: left;
+            padding: 0 20px 0 13px;
+            border: 1px solid var(--color-gray);
+        }
+    </style>
 </head>
 <body>
 <div class="main-layout">
     <div class="container">
         <h1 class="title">Авиабилеты в Казахстане</h1>
-        <div class="search">
+        <form action="index-result.php" method="POST" class="search">
             <div class="search__input">
-                <input type="text" style="border-right:none;" placeholder="Откуда"/>
+                <select
+                    class="select-city"
+                    name="from"
+                    style="border-left: none; border-right: none"
+                    placeholder="Откуда"
+                    id="from"
+                >
+                    <option value=""></option>
+                    <?php foreach($cities as $city) : ?>
+                        <option value="<?php echo $city['id']?>"> <?php echo $city['name'] ?></option>
+                    <?php endforeach; ?>
+                </select>
                 <p class="example">
                     <span>Алматы</span>
                     <span>Африка</span>
                 </p>
             </div>
-            <button class="search__swap">
+            <div class="search__swap" id="swap" >
                 <div></div>
-            </button>
+            </div>
             <div class="search__input">
-                <input style="border-left: none; border-right: none" placeholder="Куда" type="text"/>
+                <select
+                    class="select-city"
+                    style="border-left: none; border-right: none"
+                    placeholder="Куда"
+                    name="to"
+                    id="to"
+                >
+                    <option value=""></option>
+                    <?php foreach($cities as $city) : ?>
+                        <option value="<?php echo $city['id']?>"> <?php echo $city['name'] ?></option>
+                    <?php endforeach; ?>
+                </select>
                 <p class="example">
                     <span>Алматы</span>
                     <span>Африка</span>
@@ -31,24 +75,21 @@
             <div class="search-form__date_choose">
                 <div class="search-form__date_choose__event"></div>
                 <div class="left-line"></div>
-                <input class="event__input-no" placeholder="Дата" type="date">
-                <!--                <div class="event__input-no">Дата</div>-->
+                <input name="flight_date" class="event__input-no" id="date" placeholder="Дата" type="date">
                 <div class="clear"></div>
             </div>
-            <select class="search-form__passengers">
+            <select class="search-form__passengers" name="type">
                 <div class="left-line"></div>
                 <div class="psngrs_type">Класс</div>
                 <div class="psngrs_number">Эконом</div>
-                <option value="efwwf">Эконом</option>
-                <option value="efwwf">Бизнес</option>
-                <option value="efwwf">Комфорт+</option>
-
+                <option value="Econom">Эконом</option>
+                <option value="Business">Бизнес</option>
+                <option value="Comfort">Комфорт+</option>
             </select>
-            <button class="search__submit">
-                <a href="./index-result.html">Искать</a>
+            <button type="submit" class="search__submit">
+                Искать
             </button>
-        </div>
-
+        </form>
         <div class="advantages">
             <h2 class="adv__title">Подробнее о поиске авиабилетов на Chocotravel</h2>
             <h3 class="adv__subtitle">Именно по этим причинам люди используют Chocotravel как бесплатный сервис по
@@ -95,7 +136,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="subscript">
             <img src="https://www.chocotravel.com/media/v3/media/images/subscribe-icon.svg" alt="">
             <p>Подпишитесь на рассылку и будьте в курсе всех самых выгодных цен и интересных новостей!</p>
@@ -104,7 +144,6 @@
                 <button>Подписаться</button>
             </form>
         </div>
-
         <div class="about-us">
             <p>Часто сталкиваетесь с необходимостью купить билеты на самолет? Думали ли Вы о том,как было бы здорово,
                 если бы бронирование авиабилетов занимало всего 5 минут? Теперь это стало реально! Благодаря сервису
@@ -121,7 +160,6 @@
             <p>3. Множество способов оплаты.</p>
             <p>Вы можете оплатить покупку любым удобным для вас способом</p>
         </div>
-
         <div class="media">
             <header class="media__header">СМИ о нас</header>
             <ul class="media__list">
@@ -147,7 +185,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="app">
             <div class="app__left">
                 <img src="https://www.chocotravel.com/media/v3/media/images/mainpage/download-app.png" alt="">
@@ -175,8 +212,32 @@
         </div>
     </div>
 </div>
-<script src="./js/index.js"></script>
 
+<script>
+    const sw = document.getElementById("swap").addEventListener('click', (e) => {
+        const from = document.getElementById("from").value; 
+        const to = document.getElementById("to").value;
+        document.getElementById("from").value = to;
+        document.getElementById("to").value = from; 
+    })
+
+    const id = document.getElementById("date");
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    } 
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("date").setAttribute("min", today);
+
+</script>
+<script src="./js/index.js"></script>
 <script src="./js/main-layout.js"></script>
 </body>
 </html>
