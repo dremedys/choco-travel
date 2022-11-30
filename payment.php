@@ -59,6 +59,7 @@
                     }
                 ?></p>
                 <p>Цена <?php
+                    $_SESSION['price'] = $fl['price'];
                     echo $fl['price']
                 ?> KZT</p>
                 <div>
@@ -88,7 +89,7 @@
         <?php endforeach; ?>
     <?php endif ?>
     <div>
-        <!-- <form action="" method="submit"> -->
+        <form action="tickets.php" method="POST">
             <label>
                 Credit Card
                 <input
@@ -97,10 +98,13 @@
                     type="text"
                     placeholder="Введите карту"
                 />
-                <p id="isValid"></p>
+                <p id="isValid" name="valid"></p>
             </label>
-            <input type="submit" value="Отправить"/>
-        <!-- </form> -->
+            <input 
+                type="submit" 
+                value="Отправить"
+            />
+        </form>
     </div>
 </div>
 <script>

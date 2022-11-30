@@ -1,9 +1,12 @@
 <?php
     session_start();
     require_once "db.php";
-    $cities = mysqli_query($conn, "select * from cities");
-    // if(isset($_POST['from'])){
-    //     $cities = mysqli_query($conn, "select * from cities where id != " . $_POST['1']);
+    if(isset($_SESSION['user_id'])){
+        $cities = mysqli_query($conn, "select * from cities");
+    }
+    else {
+        header("Location: login-email.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -40,6 +40,12 @@
         <?php if ($count_rows != 0) : ?>
             <?php foreach($results as $result) : ?>
                 <div class="card">
+                    <div><?php
+                        $bought = mysqli_query($conn, "SELECT * FROM tickets WHERE flight_id='". $result['id'] ."'");
+                        if(!empty($bought)){
+                            echo "Уже куплен";
+                        }
+                    ?></div>
                     <div class="card__content">
                         <input name="id" disabled value="<?php echo 'Индекс ' . $result['id'] ?>"/>
                         <span><?php echo $result['company_id'] ?></span>
