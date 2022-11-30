@@ -41,6 +41,7 @@
             <?php foreach($results as $result) : ?>
                 <div class="card">
                     <div class="card__content">
+                        <input name="id" disabled value="<?php echo 'Индекс ' . $result['id'] ?>"/>
                         <span><?php echo $result['company_id'] ?></span>
                         <div class="kind">Прямой</div>
                         <div class="time">
@@ -49,12 +50,11 @@
                                 $minutes = substr($result['durationTime'], 3, 2);
                                 $hours = substr($result['durationTime'], 0, 2);
                                 echo $hours . "ч " . $minutes . "мин " . $seconds . "с ";
-                                // echo $result['durationTime'];
                             ?>
                         </div>
-                        <button>
-                            Купить за <?php echo $result['price']?> KZT
-                        </button>
+                        <a href="payment.php" onclick="<?php
+                            $_SESSION['flight_id'] = $result['id'];
+                        ?>" >Купить за <?php echo $result['price']?> KZT</a>
                     </div>
                 </div>
             <?php endforeach; ?>

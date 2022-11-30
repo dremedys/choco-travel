@@ -1,7 +1,7 @@
 const handleSearch = () => {
     window.history.go('../index-result.html')
 }
-document.querySelector('.search__submit').addEventListener('click', handleSearch)
+// document.querySelector('.search__submit').addEventListener('click', handleSearch)
 
 const pickTab = (number) => {
     const start = document.getElementById("start-booking");
